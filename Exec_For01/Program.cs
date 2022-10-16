@@ -10,12 +10,12 @@ namespace Exec_For01
 	{
 		static void Main(string[] args)
 		{
-			for (int i = 0; i <= 5; i++)
+			for (int i = 5; i >= 1; i--)
 			{
-				int countOfEmpty = i;
-				int countOfStar = 5 - i;
-
-				string row = new string(' ', countOfEmpty) + new string('*', countOfStar);
+				int countOfStar = i;
+				int countOfEmpty = 5 - i;
+				
+				string row = new string('*', countOfStar) + new string(' ', countOfEmpty);
 				Console.WriteLine(row);
 			}
 		}
